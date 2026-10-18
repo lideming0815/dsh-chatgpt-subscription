@@ -1,0 +1,89 @@
+.section {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  min-width: 0;
+  padding-top: 12px;
+  border-top: 0.5px solid var(--dsw-alias-settings-card-stroke);
+  color: var(--dsw-alias-label-primary);
+  font-size: 13px;
+  line-height: 20px;
+}
+
+.row,
+.actions {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 8px 12px;
+}
+
+.row {
+  justify-content: space-between;
+}
+
+.copy,
+.prompt {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+  min-width: 0;
+}
+
+.title {
+  font-weight: 500;
+}
+
+.status,
+.hint {
+  margin: 0;
+  color: var(--dsw-alias-label-secondary);
+  overflow-wrap: anywhere;
+}
+
+.error {
+  margin: 0;
+  color: var(--dsw-alias-state-error-primary);
+  overflow-wrap: anywhere;
+}
+
+.link {
+  color: var(--dsw-alias-label-primary);
+  text-decoration: underline;
+  text-underline-offset: 3px;
+  overflow-wrap: anywhere;
+}
+
+.link:focus-visible {
+  outline: 2px solid var(--dsw-alias-label-primary);
+  outline-offset: 3px;
+  border-radius: var(--dsw-radius-xs);
+}
+
+.prompt {
+  gap: 8px;
+}
+
+.field {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+  min-width: 0;
+}
+
+.input {
+  width: 100%;
+  box-sizing: border-box;
+}
+
+.code {
+  font: inherit;
+  user-select: all;
+}
+
+.actions > button {
+  max-width: 100%;
+  white-space: normal;
+  height: auto;
+  min-height: 36px;
+}

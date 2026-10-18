@@ -1,0 +1,76 @@
+/** Locale-owned subscription sign-in copy. */
+export const en = {
+  title: 'ChatGPT subscription',
+  titleLegacy: 'ChatGPT subscription (legacy Codex)',
+  loading: 'Checking connection…',
+  statusUnknown: 'Connection status unavailable',
+  signedOut: 'Connect your ChatGPT account to use this provider.',
+  connected: 'ChatGPT connected',
+  reconnect: 'Connect ChatGPT again to continue.',
+  waiting: 'Complete sign-in in your browser.',
+  completing: 'Completing sign-in…',
+  signIn: 'Sign in with ChatGPT',
+  signOut: 'Disconnect',
+  signingIn: 'Connecting…',
+  cancel: 'Cancel sign-in',
+  openBrowser: 'Open ChatGPT sign-in',
+  submit: 'Continue',
+  callback: 'Callback URL',
+  callbackHint: 'If the browser does not return here, paste the full redirect URL.',
+  choose: 'Choose a sign-in method',
+  code: 'Verification code',
+  retry: 'Retry',
+  loadFailed: 'Connection status could not be loaded. Try again.',
+  actionFailed: 'The request failed. Try again.',
+  loginBusy: 'A sign-in is already running. Finish or cancel it in the window that started it.',
+  staleAttempt: 'This sign-in has ended. Start again.',
+  invalidAnswer: 'The answer could not be accepted. Check it and try again.',
+  storageFailed: 'Your connection could not be saved. Check access to the Harness credential store.',
+  installationFailed: 'The installation ID could not be read. Check the plugin configuration.',
+  signInFailed: 'Sign-in could not be completed. Try again.',
+  saveProvider: 'Save this provider to make its models available.',
+  keyOverride: 'If this provider explicitly references an API key, that key takes priority over this connection.',
+  localSignOut: 'Disconnected locally. Remove this connection in ChatGPT to revoke access.',
+} as const
+
+/** Translation key shared by both dictionaries. */
+export type SubscriptionKey = keyof typeof en
+
+declare module '@deepseek-ai/dsh-client-ui-slots' {
+  interface LocaleNamespaceMap { 'chatgpt-subscription': SubscriptionKey }
+}
+
+/** Chinese copy, with the English key set checked by TypeScript. */
+export const zh: Record<SubscriptionKey, string> = {
+  title: 'ChatGPT 订阅',
+  titleLegacy: 'ChatGPT 订阅（旧版 Codex）',
+  loading: '正在读取连接状态…',
+  statusUnknown: '连接状态暂不可用',
+  signedOut: '连接 ChatGPT 账号以使用此提供商',
+  connected: '已连接 ChatGPT',
+  reconnect: '请重新连接 ChatGPT 以继续使用',
+  waiting: '请在浏览器中完成登录',
+  completing: '正在完成登录…',
+  signIn: '使用 ChatGPT 登录',
+  signOut: '断开连接',
+  signingIn: '正在连接…',
+  cancel: '取消登录',
+  openBrowser: '打开 ChatGPT 登录页面',
+  submit: '继续',
+  callback: '回调网址',
+  callbackHint: '如果浏览器未自动返回，请粘贴完整的重定向网址',
+  choose: '选择登录方式',
+  code: '验证码',
+  retry: '重试',
+  loadFailed: '无法读取连接状态，请重试',
+  actionFailed: '操作失败，请重试',
+  loginBusy: '已有登录正在进行，请在发起登录的窗口中完成或取消',
+  staleAttempt: '此登录已结束，请重新登录',
+  invalidAnswer: '无法接受此回答，请检查后重试',
+  storageFailed: '无法保存连接，请检查 Harness 凭据存储的访问权限',
+  installationFailed: '无法读取安装标识，请检查插件配置',
+  signInFailed: '无法完成登录，请重试',
+  saveProvider: '保存此提供商后即可选择其模型',
+  keyOverride: '如果此提供商显式引用了 API 密钥，该密钥会优先于此连接',
+  localSignOut: '已在本地断开连接，请前往 ChatGPT 移除此连接以撤销授权',
+}

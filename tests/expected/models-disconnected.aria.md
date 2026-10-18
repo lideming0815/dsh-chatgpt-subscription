@@ -1,0 +1,8 @@
+- region "ChatGPT 订阅":
+  - text: ChatGPT 订阅
+  - status: 连接 ChatGPT 账号以使用此提供商
+  - button "使用 ChatGPT 登录"
+- region "ChatGPT 订阅（旧版 Codex）":
+  - text: ChatGPT 订阅（旧版 Codex）
+  - status: 连接 ChatGPT 账号以使用此提供商
+  - button "使用 ChatGPT 登录"

@@ -1,0 +1,5 @@
+- region "ChatGPT 订阅（旧版 Codex）":
+  - text: ChatGPT 订阅（旧版 Codex）
+  - status: 已连接 ChatGPT
+  - button "使用 ChatGPT 登录"
+  - button "断开连接"
