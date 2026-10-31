@@ -5,8 +5,8 @@
 
 ## 兼容版本
 
-- DSH `0.2.1-rc.2`。
-- pi-ai `1.1.0`。
+- DSH `0.2.1-rc.3`。
+- pi-ai `1.4.0`。
 - Node.js `^22.19.0 || >=24.0.0`。
 
 接口仍处于预稳定阶段，请先验证兼容性再升级 DSH 或 pi-ai。
@@ -25,7 +25,7 @@ npm pack --ignore-scripts
 将生成的包安装到需要使用的 Profile。
 
 ```sh
-dsh plugin --profile web add --ignore-scripts /absolute/path/dsh-chatgpt-subscription-0.1.0.tgz
+dsh plugin --profile web add --ignore-scripts /absolute/path/dsh-chatgpt-subscription-0.1.1.tgz
 ```
 
 开发时也可以使用本地链接。
@@ -124,4 +124,4 @@ Client 通过 `settings.models.provider-card` 插槽接入模型管理。
 插件卸载会取消自身未完成的登录并等待已经开始的凭证写入完成。
 凭证接口没有条件删除操作，请避免在多个 DSH 进程中同时对同一提供商执行登录和退出。
 
-参考 [OpenAI 官方订阅接入文档](https://developers.openai.com/siwc/token-sharing-open-source) 和 [pi-ai 官方 OAuth 实现](https://github.com/earendil-works/pi/blob/v1.1.0/packages/ai/src/auth/oauth/openai-chatgpt.ts)。
+参考 [OpenAI 官方订阅接入文档](https://developers.openai.com/siwc/token-sharing-open-source) 和 [pi-ai 官方 OAuth 实现](https://github.com/earendil-works/pi/blob/v1.4.0/packages/ai/src/auth/oauth/openai-chatgpt.ts)。
